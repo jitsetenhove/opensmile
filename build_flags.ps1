@@ -23,7 +23,7 @@ $cmakeFlags = @(
     #"-DCMAKE_C_COMPILER=clang" "-DCMAKE_CXX_COMPILER=clang++"
 
     # to use vcpkg for external libraries, uncomment and adapt the path to your vcpkg root folder
-    #"-DCMAKE_TOOLCHAIN_FILE=...\vcpkg\scripts\buildsystems\vcpkg.cmake"
+    "-DCMAKE_TOOLCHAIN_FILE=..\vcpkg\scripts\buildsystems\vcpkg.cmake"
 
     # controls whether to build and link to libopensmile as static or shared library
     # static builds are preferred unless you need openSMILE plugins
@@ -36,7 +36,7 @@ $cmakeFlags = @(
     "-DMARCH_NATIVE=OFF"
 
     # whether to compile with PortAudio support
-    "-DWITH_PORTAUDIO=OFF"
+    "-DWITH_PORTAUDIO=ON"
 
     # whether to compile with FFmpeg support
     # 1. download ffmpeg source distribution
